@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class="text-white">Are you sure you want to delete, this action can't be undone</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+    </form>
+    <a href="{% url 'tweet:tweet_list' %}" class="btn btn-secondary">Cancel</a>
+{% endblock %}
