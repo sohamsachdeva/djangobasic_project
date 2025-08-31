@@ -51,5 +51,5 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
-
+visit on /tweet after the ip server
 
